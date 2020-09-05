@@ -4,14 +4,31 @@
     // variables and consts
     $str1 = 'shit';
     $str2 = 'happens';
-    echo $str1.' '.$str2;
+    // echo $str1.' '.$str2;
     $sum = "$str1 $str2";
-    echo $sum;
+    // echo $sum;
     define('GREETING', 'hey!');
     // GREETING = 'hello, dude!';
-    echo '<br>'.GREETING;
+    // echo '<br>'.GREETING;
     
-    // data types
+    // arrays
+    $people = array('Kevin', 'Jeremy', 'Peter');
+    // echo $people[0];
+    $cars = ['Honda', 'Toyota', 'Ford'];
+    $cars[] = 'Mercedes';
+    // echo $cars[count($cars)-1];
+    // print_r($cars);
+    // var_dump($cars);
+    $people = array('Maxim' => 42, 'James' => 43, 'Ann'=> 46);
+    // echo $people['Ann'];
+    $people['Maria'] = 38;
+    // var_dump($people);
+    $cars = array (
+        array('Honda', 20, 10),
+        array('Toyota', 27, 19),
+        array('Ford', 22, 17)
+    );
+    echo $cars[1][0];
 
 
 ?>
