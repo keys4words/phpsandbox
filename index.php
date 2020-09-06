@@ -28,7 +28,23 @@
         array('Toyota', 27, 19),
         array('Ford', 22, 17)
     );
-    echo $cars[1][0];
+    // echo $cars[1][0];
+
+    // loops
+    for($i=0;$i<=3;$i++){
+        // echo "$i<br>";
+    }
+    // $j = 0;
+    // while($j<=3){
+    //     echo "$j<br>";
+    //     $j++;
+    // }
+    foreach ($cars as $car) {
+        echo "$car[0]<br>";
+    }
+    foreach ($people as $name => $age) {
+        echo "$name -> $age<br>";
+    }
 
 
 ?>
