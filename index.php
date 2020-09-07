@@ -52,12 +52,34 @@
     }
     // echo(simpleFunc('James'));
 
-    $myNum = 10;
-    function addFive($num){
-        $num += 5;
+    // $myNum = 10;
+    // function addFive($num){
+    //     $num += 5;
+    // }
+    // addFive($myNum);
+    // echo $myNum;
+
+    // conditions
+    // $num = '5';
+    // if ($num == 5 && 5 > 6){
+    //     echo '5 passed';
+    // } else {
+    //     echo '5 NOT passed';
+    // }
+
+    //switch
+    $favColor = 'blue';
+    switch($favColor){
+        case 'red':
+            echo 'Your color is red';
+            break;
+        case 'green':
+            echo 'Your color is green';
+            break;
+        default:
+            echo 'Your color is default';
+            break;
     }
-    addFive($myNum);
-    echo $myNum;
 
 
 ?>
