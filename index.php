@@ -39,12 +39,25 @@
     //     echo "$j<br>";
     //     $j++;
     // }
-    foreach ($cars as $car) {
-        echo "$car[0]<br>";
+    // foreach ($cars as $car) {
+    //     echo "$car[0]<br>";
+    // }
+    // foreach ($people as $name => $age) {
+    //     echo "$name -> $age<br>";
+    // }
+
+    // functions
+    function simpleFunc($name='Max'){
+        return 'hello, '.$name;
     }
-    foreach ($people as $name => $age) {
-        echo "$name -> $age<br>";
+    // echo(simpleFunc('James'));
+
+    $myNum = 10;
+    function addFive($num){
+        $num += 5;
     }
+    addFive($myNum);
+    echo $myNum;
 
 
 ?>
