@@ -68,18 +68,33 @@
     // }
 
     //switch
-    $favColor = 'blue';
-    switch($favColor){
-        case 'red':
-            echo 'Your color is red';
-            break;
-        case 'green':
-            echo 'Your color is green';
-            break;
-        default:
-            echo 'Your color is default';
-            break;
-    }
+    // $favColor = 'blue';
+    // switch($favColor){
+    //     case 'red':
+    //         echo 'Your color is red';
+    //         break;
+    //     case 'green':
+    //         echo 'Your color is green';
+    //         break;
+    //     default:
+    //         echo 'Your color is default';
+    //         break;
+    // }
+
+    // dates
+    // echo date('d');
+    // echo date('m');
+    // echo date('Y/m/d');
+    date_default_timezone_set('Russia/Moscow');
+    // echo date('h:i:sa')
+    $timestamp = mktime(10, 14, 54, 9, 10, 1981);
+    // echo $timestamp;    // in unix format
+    // echo date('m/d/Y h:i:sa', $timestamp);
+    $timestamp2 = strtotime('7:00pm March 22 2019');
+    // echo date('m/d/Y h:i:sa', $timestamp2);
+    
+    $timestamp3 = strtotime('+2 Days');
+    echo date('m/d/Y h:i:sa', $timestamp3);
 
 
 ?>
