@@ -51,6 +51,10 @@
             <li><a href="index.php?email=Stiven">Stiven</a></li>
         </ul>
         <?php echo "{$email}'s profile"; ?>
+        <hr>
+        <a href="string_functions.php">See String Functions</a>
+        <br>
+        <a href="ternary.php">See Ternary & Shorthand Syntax</a>
     </div>
 
     <!-- Optional JavaScript -->
